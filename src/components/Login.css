@@ -1,0 +1,126 @@
+.background-image {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/swimming.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs input {
+  font-style: italic;
+  letter-spacing: 1.2px;
+  padding: 10px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 10px;
+  padding: 15px 10px;
+}
+
+button {
+  background-color: #4697ff;
+  color: #fff;
+  padding: 10px;
+
+  text-align: center;
+  border: none;
+  width: 90%;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+button:hover {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
+  transform: scale(1.1);
+}
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs div {
+  display: flex;
+  font-style: italic;
+}
+
+.login-txt {
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.inputs input:focus {
+  outline: none;
+  border: 1px solid #f6f6f6;
+  background-color: #fff;
+  box-shadow: -1px 3px 15px -1px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login {
+  height: 70%;
+  width: 30%;
+  text-align: center;
+  background-color: #fff;
+
+  border-radius: 20px;
+  /* overflow: hidden; */
+  display: flex;
+
+  align-items: center;
+}
+
+.input-row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-row input {
+  width: 49.5%;
+}
+
+.inputs .first,
+.inputs .last {
+  font-style: italic;
+}
+
+.inputs .first {
+  border-radius: 10px 0 0 10px;
+}
+
+.inputs .last {
+  border-radius: 0 10px 10px 0;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(0);
+  }
+  50%,
+  60% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+}

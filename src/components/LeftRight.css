@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.container-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left,
+.right {
+  min-width: 200px;
+  width: 50%;
+}
+.right {
+  background-color: aqua;
+}
+
+.left:after,
+.right:after {
+  content: "";
+  display: block;
+  padding-bottom: 90%;
+}
+
+.left,
+.right {
+  background-color: #7189ff;
+  background-position: center;
+  background-size: cover;
+}
+
+.left-r {
+  background-image: url(../images/raqetball.jpg);
+}
+.right-s {
+  background-image: url(../images/swimming.jpg);
+}
+
+.left-t {
+  background-image: url(../images/tennis.jpg);
+}
+
+.right-g {
+  background-image: url(../images/gym.jpg);
+}
+.right-r {
+  background-color: #a0ddff;
+}
+.right-t {
+  background-color: #624cab;
+}
+
+.left-g {
+  background-color: #c1cefe;
+}
+
+.header-container {
+  color: #fff;
+}
+
+.sign-up {
+  font-family: "Montserrat";
+  letter-spacing: 1.5px;
+  width: 400px;
+  background-color: #4996ff;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 20px 30px;
+}
